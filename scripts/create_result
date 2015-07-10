@@ -1,0 +1,8 @@
+#!/bin/bash
+i=0
+
+while [ $i -lt 4522 ]
+do
+	echo "1.00" >> test_result.m
+	i=$[$i+1]
+done

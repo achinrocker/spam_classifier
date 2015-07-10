@@ -1,0 +1,4 @@
+#!/bin/bash
+octave --silent --eval "createF('$1')"
+echo $2 >> /home/achin/OctaveProjects/libsvm-3.20/matlab/input_label.m
+

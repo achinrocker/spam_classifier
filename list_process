@@ -1,0 +1,13 @@
+#!/bin/bash
+cd /home/mnit/scripts2;
+ls -B /home/mnit/scripts2/30spam > files;
+date >> time;
+i=0;
+while read line           
+do           
+	echo -n $line  
+	echo " <$i>"
+	octave --silent --eval "createF('$line')"
+	i=$[$i+1];
+done <files
+date >> time;

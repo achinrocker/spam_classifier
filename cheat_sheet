@@ -1,0 +1,10 @@
+
+
+open terminal1  : pwd = /home/achin1/OctaveProjects/libsvm-3.20/matlab
+open terminal2  : pwd = /home/
+
+octave:50> load('input.m')
+octave:50> load('input_label.m')
+octave:51> load('radial_model4.m')
+octave:52> load('linear_model4.m')
+octave:53> [predict]=svmpredict(input_label,input,radial_model4)
